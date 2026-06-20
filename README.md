@@ -79,3 +79,12 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 - **Differencing:** Successfully removed trend and seasonality, making the series more stationary.
 - **Diff MA + Past Values:** Reconstructed the original pattern with much better accuracy.
 - **Diff MA + Smooth Past:** Similar but with slightly smoother curves.
+
+## 🔗 Key Concepts & Formulas
+- **Mean Squared Error (MSE):** `MSE = (1/n) * Σ(y_true - y_pred)²`
+- **Mean Absolute Error (MAE):** `MAE = (1/n) * Σ|y_true - y_pred|`
+- **Naive Forecast:** `ŷ[t+1] = y[t]`
+- **Moving Average:** `ŷ[t] = (1/window_size) * Σ_{i=t-window_size}^{t-1} y[i]`
+- **Seasonal Differencing:** `diff_series[t] = series[t] - series[t - period]`
+- **Reconstructing:** `forecast[t] = diff_forecast[t] + series[t - period]`
+
