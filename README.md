@@ -59,3 +59,14 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 - Matplotlib
 - Custom time series generation functions
 
+## 📈 Results
+### Forecast Performance Summary
+
+| Method | MSE | MAE | Comments |
+|--------|-----|-----|----------|
+| **Naive Forecast** | 19.58 | 2.60 | Baseline, simple lag-1 prediction |
+| **Moving Average** | 56.80 | 4.12 | Worse than naive, doesn't capture trend/seasonality |
+| **Differencing + Moving Avg** | - | - | Removed trend/seasonality |
+| **Diff MA + Past Values** | 8.50 | 2.33 | Added back past season values |
+| **Diff MA + Smooth Past** | 13.57 | 2.26 | Smoothed version, lower MAE but higher MSE |
+
