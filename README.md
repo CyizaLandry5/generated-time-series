@@ -39,3 +39,12 @@ The goal was to understand how to split time series data, create forecasts using
 6. **Forecast Alignment:** Ensuring all forecast series matched the validation period in both length and time indices.
 7. **Smoothing Past Values:** Figuring out the correct slicing for `SERIES[SPLIT_TIME - 370:-360]` to apply a moving average with window_size=11.
 
+## 📋 Important Submission Notes (AutoGrader)
+To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
+- Add any extra `print` statements in the assignment
+- Add any extra code cells
+- Change any of the function parameters
+- Use global variables inside graded exercises (unless specifically instructed)
+- Change the assignment code where not required
+
+
