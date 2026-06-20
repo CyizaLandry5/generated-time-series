@@ -30,3 +30,12 @@ The goal was to understand how to split time series data, create forecasts using
 - Forecast combination techniques
 - Time series visualization with matplotlib
 
+## 🚧 Challenges Faced
+1. **Understanding Time Series Components:** Distinguishing between trend, seasonality, and noise in the generated data.
+2. **Naive Forecast Slicing:** Correctly shifting the series by one time step while matching the validation period length.
+3. **Moving Average Implementation:** Computing the rolling mean without using built-in pandas functions, using a loop over the series.
+4. **Differencing Logic:** Understanding why subtracting t-365 values removes both trend and seasonality (seasonal period = 365 days).
+5. **Index Slicing for Differencing:** Ensuring `diff_series` had the correct length (`len(SERIES) - 365`) and that `diff_time` matched appropriately.
+6. **Forecast Alignment:** Ensuring all forecast series matched the validation period in both length and time indices.
+7. **Smoothing Past Values:** Figuring out the correct slicing for `SERIES[SPLIT_TIME - 370:-360]` to apply a moving average with window_size=11.
+
