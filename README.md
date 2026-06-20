@@ -73,3 +73,9 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 ### Best Performing Method
 **Differencing + Moving Average + Past Values** achieved the lowest MSE (8.50), while **Smoothing** achieved the lowest MAE (2.26), indicating a trade-off between bias and variance.
 
+### Visual Results
+- **Naive Forecast:** Lagged behind by exactly one step, visible as a shifted version of the validation series.
+- **Moving Average:** Smoothed out peaks and valleys, missing both trend and seasonality.
+- **Differencing:** Successfully removed trend and seasonality, making the series more stationary.
+- **Diff MA + Past Values:** Reconstructed the original pattern with much better accuracy.
+- **Diff MA + Smooth Past:** Similar but with slightly smoother curves.
