@@ -52,3 +52,10 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 > - All cells are frozen except for solution cells
 > - Avoid using global variables
 
+## 🛠️ Technologies & Tools
+- Python 3
+- NumPy
+- TensorFlow (tf.keras.losses)
+- Matplotlib
+- Custom time series generation functions
+
