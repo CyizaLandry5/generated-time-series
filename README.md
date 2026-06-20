@@ -99,3 +99,10 @@ def compute_metrics(true_series, forecast):
     mse = tf.keras.losses.MeanSquaredError()(true_series, forecast).numpy()
     mae = tf.keras.losses.MeanAbsoluteError()(true_series, forecast).numpy()
     return mse, mae
+
+# Moving average forecast
+def moving_average_forecast(series, window_size):
+    forecast = []
+    for time in range(len(series) - window_size):
+        forecast.append(series[time:time + window_size].mean())
+    return np.array(forecast)
