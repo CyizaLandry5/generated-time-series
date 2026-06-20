@@ -88,3 +88,9 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 - **Seasonal Differencing:** `diff_series[t] = series[t] - series[t - period]`
 - **Reconstructing:** `forecast[t] = diff_forecast[t] + series[t - period]`
 
+## 🧪 Implementation Highlights
+```python
+# Train/validation split
+def train_val_split(time, series, split_time=1100):
+    return time[:split_time], series[:split_time], time[split_time:], series[split_time:]
+
