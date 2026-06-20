@@ -20,3 +20,13 @@ The goal was to understand how to split time series data, create forecasts using
 - **Combining Techniques:** Combined differencing with moving averages and smoothed past values to improve forecast accuracy.
 - **Visualization:** Plotted time series and forecasts to visually assess performance.
 
+## ⚙️ Key Skills Practiced
+- Time series data generation and manipulation
+- Train/validation splitting for time series
+- Forecast evaluation with MSE and MAE
+- Naive forecasting (persistence model)
+- Moving average forecasting
+- Seasonal differencing
+- Forecast combination techniques
+- Time series visualization with matplotlib
+
