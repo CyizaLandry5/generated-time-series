@@ -47,4 +47,8 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 - Use global variables inside graded exercises (unless specifically instructed)
 - Change the assignment code where not required
 
+> 💡 **Tips:**
+> - Use `# grade-up-to-here` in graded cells to check progress
+> - All cells are frozen except for solution cells
+> - Avoid using global variables
 
