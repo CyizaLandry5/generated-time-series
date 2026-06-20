@@ -10,4 +10,13 @@ This assignment introduced the fundamentals of **time series analysis** and **fo
 
 The goal was to understand how to split time series data, create forecasts using different methods, and measure forecast accuracy using Mean Squared Error (MSE) and Mean Absolute Error (MAE).
 
+## 🎯 What I Learned
+- **Time Series Components:** Understood and worked with trend, seasonality, and noise in time series data.
+- **Data Splitting:** Implemented a function to split time series data into training and validation sets based on a specified split point.
+- **Evaluation Metrics:** Used TensorFlow's loss functions to compute MSE and MAE for forecast evaluation.
+- **Naive Forecasting:** Implemented the simplest forecasting method - predicting the next value as the previous value (lag-1 forecast).
+- **Moving Average:** Computed rolling mean forecasts to smooth out short-term fluctuations.
+- **Differencing:** Removed seasonality and trend by subtracting values from the previous seasonal cycle (t - 365).
+- **Combining Techniques:** Combined differencing with moving averages and smoothed past values to improve forecast accuracy.
+- **Visualization:** Plotted time series and forecasts to visually assess performance.
 
