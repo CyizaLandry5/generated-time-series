@@ -70,3 +70,6 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 | **Diff MA + Past Values** | 8.50 | 2.33 | Added back past season values |
 | **Diff MA + Smooth Past** | 13.57 | 2.26 | Smoothed version, lower MAE but higher MSE |
 
+### Best Performing Method
+**Differencing + Moving Average + Past Values** achieved the lowest MSE (8.50), while **Smoothing** achieved the lowest MAE (2.26), indicating a trade-off between bias and variance.
+
