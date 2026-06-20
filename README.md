@@ -94,3 +94,8 @@ To avoid grader errors from the DeepLearning.AI AutoGrader, I made sure NOT to:
 def train_val_split(time, series, split_time=1100):
     return time[:split_time], series[:split_time], time[split_time:], series[split_time:]
 
+# Evaluation metrics
+def compute_metrics(true_series, forecast):
+    mse = tf.keras.losses.MeanSquaredError()(true_series, forecast).numpy()
+    mae = tf.keras.losses.MeanAbsoluteError()(true_series, forecast).numpy()
+    return mse, mae
